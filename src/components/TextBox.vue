@@ -1,17 +1,28 @@
 <template>
   <div>
     <header class="pen-intro">
-      <h1>Medical Devices</h1>
+      <h1>{{header}}</h1>
     </header>
     <div class="dialogue">
-      <p>Your company has created a medical device that can detect heart attacks. If a patient is showing unhealthy signs the device has the ability to correct and prevent the heart attack. </p>
+      <p>{{body}}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TextBox'
+  name: 'TextBox',
+  
+  props: {
+    header: {
+      type: String,
+      default: ''
+    },
+    body: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 

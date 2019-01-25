@@ -1,5 +1,5 @@
 <template>
-  <router-link to="stageone/game">
+  <router-link :to="routeURL">
     <button class="eightbit-btn">{{buttonText}}</button>
   </router-link>
 </template>

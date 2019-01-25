@@ -19,13 +19,11 @@ export default new Router({
       path: '/stageone',
       name: 'MedicalAdventure',
       component: MedicalAdventure,
-      children: [
-        {
-          path: '/game',
-          name: 'MedicalAdventureGame',
-          component: MedicalAdventureGame,
-        }
-      ]
+    },
+    {
+      path: '/stageone/game',
+      name: 'MedicalAdventureGame',
+      component: MedicalAdventureGame,
     },
     {
       path: '/stagetwo',
